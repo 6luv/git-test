@@ -375,6 +375,10 @@ const App: FC = () => {
     },
   ];
 
+  const abc = () => {
+    console.log(1);
+  }
+
   const getSigner = async () => {
     if (!window.ethereum) return;
     const provider = new ethers.BrowserProvider(window.ethereum);
