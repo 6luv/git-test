@@ -436,6 +436,7 @@ const App: FC = () => {
   return (
     <Flex maxW="100%" flexDir="column">
       <Text>{signer?.address}</Text>
+      <Button onClick={onClickMetamask}>test</Button>
       <Button onClick={onClickMetamask}>지갑 연결</Button>
       <Button onClick={handleDeployContract}>컨트랙트 생성</Button>
       <Input value={name} onChange={(e) => setName(e.target.value)} />
