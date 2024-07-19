@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import { Contract, JsonRpcSigner, ethers } from "ethers";
 import { Switch } from "@chakra-ui/react";
-
+// Fultime Scam investor
 const App: FC = () => {
   const [signer, setSigner] = useState<JsonRpcSigner | null>(null);
   const [isMintingEnabled, setIsMintingEnabled] = useState(false);
