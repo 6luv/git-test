@@ -450,13 +450,13 @@ const App: FC = () => {
         value={totalSupply}
         onChange={(e) => setTotalSupply(e.target.value)}
       />
-      {/* {isMintingEnabled && ( */}
-      <Flex>
-        <Input value={mint} onChange={(e) => setMint(e.target.value)} />
-        <Input value={deployedAddress} />
-        <Button onClick={onClicMint}>추가 민트</Button>
-      </Flex>
-      {/* )} */}
+      {isMintingEnabled && (
+        <Flex>
+          <Input value={mint} onChange={(e) => setMint(e.target.value)} />
+          <Input value={deployedAddress} />
+          <Button onClick={onClicMint}>추가 민트</Button>
+        </Flex>
+      )}
 
       <FormControl display="flex" alignItems="center">
         <FormLabel htmlFor="email-alerts" mb="0">
