@@ -25,7 +25,7 @@ const App: FC = () => {
       inputs: [
         {
           internalType: "string",
-          name: "_name",
+          name: "name",
           type: "string",
         },
         {
@@ -439,6 +439,7 @@ const App: FC = () => {
 
   return (
     <Flex maxW="100%" flexDir="column">
+      <Text>{signer?.address}</Text>
       <Text>{signer?.address}</Text>
       <Button onClick={onClickMetamask}>test</Button>
       <Button onClick={onClickMetamask}>지갑 연결</Button>
