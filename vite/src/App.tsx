@@ -377,7 +377,11 @@ const App: FC = () => {
 
   const abc = () => {
     console.log(1);
-  }
+  };
+
+  const abc2 = () => {
+    console.log(1);
+  };
 
   const getSigner = async () => {
     if (!window.ethereum) return;
